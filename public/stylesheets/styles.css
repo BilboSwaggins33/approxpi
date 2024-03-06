@@ -1,0 +1,276 @@
+body {
+    --black: #000000;
+    --ash-black: #222;
+    --white: #fafafa;
+    --sky: #00ccff;
+    --green: #22dddd;
+    --blue: #1300ff;
+    --dusk: #6600ff;
+    --purple: #9900ff;
+    --pink: #ff0066;
+    --red: #fe0222;
+    --orange: #fd7702;
+    --yellow: #ffbb00;
+    --lightblue: #d1ecff;
+
+    --background: var(--black);
+    --accent: var(--white);
+    --accent2: var(--lightblue);
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--accent);
+}
+
+* {
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+    font-family: sofia-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 100px 0 40px;
+}
+
+h2 {
+    font-weight: 400;
+    margin: 50px 0 10px;
+}
+
+
+p {
+    margin: 0 0 10px 0;
+    font-size: 0.5em;
+}
+
+a {
+    font-weight: 500;
+    color: lightgray;
+}
+
+.nav-container {
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 14px;
+    /*background-color: #00ccff;*/
+    flex-direction: column;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-image: radial-gradient(
+            rgba(0, 0, 0, 0) 1px,
+            var(--background) 1px
+    );
+    background-size: 4px 4px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    -moz-backdrop-filter: blur(3px);
+    font-size: 14px;
+    line-height: 14px;
+}
+
+footer::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--accent);
+    opacity: 0.2;
+}
+
+footer svg {
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+code {
+    font-family: input-mono, monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: var(--ash-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--ash-black);
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 100px 0;
+}
+
+h2 {
+    margin: 0;
+    color: var(--accent);
+    left: calc(50% + 130px);
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    line-height: 1.2;
+    /*position: absolute;*/
+}
+
+h3 {
+    margin: 0;
+    color: var(--accent);
+    left: calc(50% + 130px);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    scroll-snap-align: center;
+}
+
+
+#label {
+    width: 30vw;
+    max-width: 500px;
+}
+
+section > div {
+    position: relative;
+    max-height: 90vh;
+    margin: 20px 50px;
+    background: var(--black);
+    overflow: hidden;
+    perspective: 500px;
+
+}
+
+
+img {
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--accent);
+    transform-origin: 0%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+
+    /*height: 30px;*/
+    /*width: 15px;*/
+    /*border-radius: 5px;*/
+    /*cursor: pointer;*/
+    margin-top: -5px;
+}
+
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    background: #BBB;
+    border-radius: 3px;
+
+}
+
+
+@media screen and (max-width: 800px) {
+    section {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    section > div {
+        margin: 30px 0;
+    }
+
+    section.headerTitle {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 25px;
+        line-height: 1;
+    }
+
+    p {
+        font-size: 0.6em;
+    }
+
+    #label {
+        width: 80vw;
+    }
+
+    .nav-container {
+        visibility: hidden;
+    }
+}
+
+

@@ -24,10 +24,10 @@ export default function SketchContainer({sketch, description}: {
     const {scrollYProgress} = useScroll({target: ref});
     const y = useParallax(scrollYProgress, 100);
 
-    let opacity = useTransform(scrollYProgress, [0, 0.1, 0.5, 0.9, 1], [0, 1, 1, 1, 0]);
+    //let opacity = useTransform(scrollYProgress, [0, 0.1, 0.5, 0.9, 1], [0, 1, 1, 1, 0]);
 
     return (
-        <motion.div style={{opacity}}>
+        <motion.div>
             <section>
                 <div ref={ref}>
                     {sketch()}

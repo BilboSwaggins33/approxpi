@@ -4,7 +4,7 @@ export function Footer({ title = "" }) {
         <footer>
 
             <a
-                href="https://github.com/BilboSwaggins33"
+                href="https://github.com/BilboSwaggins33/approxpi"
                 target="_blank"
                 rel="noreferrer"
             >

@@ -5,8 +5,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Approximating Pi",
+  title: "About~Pi!",
   description: "Experimenting with ways to approximate pi!",
+  icons: {icon: "/favicon.ico"},
 };
 
 export default function RootLayout({
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <head>
+
+    </head>
+    <body className={inter.className}>{children}</body>
     </html>
   );
 }

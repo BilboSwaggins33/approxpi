@@ -66,7 +66,7 @@ a {
 .nav-container {
     position: fixed;
     bottom: 50px;
-    right: 0px;
+    right: 5px;
     display: flex;
     align-items: flex-end;
     padding: 20px;
@@ -196,7 +196,10 @@ section > div {
     background: var(--black);
     overflow: hidden;
     perspective: 500px;
+}
 
+section.headerTitle {
+    max-width: 380px;
 }
 
 

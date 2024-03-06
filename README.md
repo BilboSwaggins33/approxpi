@@ -46,3 +46,9 @@ as well as other miscellaneous tools I used:
 Next.js app deployed using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Contributing
+
+Please feel free to make suggestions or to contribute to this project! 
+This is by no means an exhaustive list of ways to approximate pi. If you have any questions, 
+feel free to reach out to me at aarondzhang33@gmail.com

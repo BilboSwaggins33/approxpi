@@ -46,13 +46,14 @@ export default function Home() {
 
 
     const titleDesc = {
-        title: "This is about pi.",
-        description: "Cool, fun techniques to calculate our favorite number!"
+        title: "This is about ~ pi.",
+        description: "Epic, unnecessary methods to calculate our favorite number! Let's get started, shall we?"
     };
 
     const conclusionDesc = {
         title: "That's all, folks!",
-        description: "I hoped you enjoyed some pi today 🥧. \n Visualizations were made with the p5.js library."
+        description: "I hoped you enjoyed some pi today 🥧. Visualizations were made with the p5.js library. " +
+            "Feel free to check out the source code on Github by clicking the footer!"
     }
 
     return (
@@ -70,7 +71,7 @@ export default function Home() {
 
             <Navigation/>
 
-            <Footer title={"Made with ❤️ by Aaron Zhang"}/>
+            <Footer title={"Made with ❤️ and 🥧 by Aaron Zhang"}/>
 
         </div>
     );

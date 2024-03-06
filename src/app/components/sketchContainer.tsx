@@ -37,7 +37,7 @@ export default function SketchContainer({sketch, description}: {
                     <p className="mt-2">{description.description}</p>
                 </motion.h3>
             </section>
-        </motion.div style={{opacity}}>
+        </motion.div>
 
     );
 }

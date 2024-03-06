@@ -30,7 +30,8 @@ as well as reading his book, *The Nature of Code* to learn more about the librar
 physics and nature simulations and visualizations.
 
 ## Learn More
-Here are some resources I used to learn about the methods used in this project:
+Here are some resources I used to learn about the methods used in this project,
+as well as other miscellaneous tools I used:
 
 - 3Blue1Brown Colliding Blocks: https://www.youtube.com/watch?v=jsYwFizhncE
 - Numberphile Mandelbrot Pi: https://www.youtube.com/watch?v=d0vY0CKYhPY
@@ -38,6 +39,7 @@ Here are some resources I used to learn about the methods used in this project:
 - The Nature of Code: https://natureofcode.com/
 - p5.js Reference: https://p5js.org/reference/
 - Next.js: https://nextjs.org/docs/getting-started
+- Framer Motion: https://www.framer.com/api/motion/
 
 ## Deployed on Vercel
 

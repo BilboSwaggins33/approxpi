@@ -18,8 +18,6 @@ export default function TitleContainer({description}: {
     const {scrollYProgress} = useScroll({target: ref});
     const y = useParallax(scrollYProgress, 100);
 
-    let opacity = useTransform(scrollYProgress, [0, 0.25, 0.5, 1], [1, 1, 1, 0]);
-
     return (
         <motion.div>
             <section className="headerTitle">

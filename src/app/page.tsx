@@ -30,7 +30,7 @@ export default function Home() {
     //archimedes approx DONE
     //sliding blocks DONE
     //square packing DONE
-    //mandelbrot DONE https://www.youtube.com/watch?v=d0vY0CKYhPY
+    //mandelbrot DONE
     //spirograph DONE
     //mobius transformation
 

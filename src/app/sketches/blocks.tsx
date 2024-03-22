@@ -11,8 +11,8 @@ function sketch(p5: P5CanvasInstance) {
 
     const canvasSize = 350;
     let label: Element;
-    let block1 : Block;
-    let block2 : Block;
+    let block1: Block;
+    let block2: Block;
     let calcs: number = 20000;
     let button: Element;
 
@@ -78,7 +78,7 @@ function sketch(p5: P5CanvasInstance) {
                 let v1i = block1.speed;
                 let v2i = block2.speed;
 
-                let v1f = (m1 - m2) * v1i  / (m1 + m2) + v2i * (2 * m2) / (m1 + m2);
+                let v1f = (m1 - m2) * v1i / (m1 + m2) + v2i * (2 * m2) / (m1 + m2);
                 let v2f = v2i * (m2 - m1) / (m1 + m2) + v1i * (2 * m1) / (m1 + m2);
 
                 block1.speed = v1f;
@@ -163,8 +163,8 @@ function sketch(p5: P5CanvasInstance) {
 
 
 
-    export function BlocksSketch() {
-        return <div id="blocks"><NextReactP5Wrapper sketch={sketch}/></div>;
+export function BlocksSketch() {
+    return <div id="blocks"><NextReactP5Wrapper sketch={sketch} /></div>;
 }
 
 
